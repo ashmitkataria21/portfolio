@@ -1,0 +1,13 @@
+i am sharing you my details 
+please create my portfolio
+using only HTML and CSS only 
+
+make it responsive , colourful , 
+styling , appealing
+
+here are my details - 
+my name is ashmit kataria
+i am from hisar , haryana 
+i am enrolled in newton school of technology 
+my enrollment number is 2601010074
+i am currently learning python and terminal cli commands 

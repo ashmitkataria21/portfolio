@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashmit Kataria | Student Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Ashmit Kataria - Student at Newton School of Technology from Hisar, Haryana. Learning Python and Terminal CLI.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow orbs -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-badge">AK</span>
+        <span class="logo-text">Ashmit<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#terminal" class="nav-link">CLI & Python</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Student @ Newton School of Technology</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-title">Ashmit Kataria</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            An ambitious tech explorer hailing from <strong>Hisar, Haryana</strong>. Currently diving deep into 
+            <strong>Python</strong> programming, mastering <strong>Terminal & CLI</strong> workflows, and crafting modern digital experiences.
+          </p>
+
+          <div class="hero-meta-badges">
+            <div class="meta-tag">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Hisar, Haryana
+            </div>
+            <div class="meta-tag">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Roll #2601010074
+            </div>
+            <div class="meta-tag tag-accent">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              Python & CLI Focused
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#terminal" class="btn btn-primary">
+              <span>View Terminal & Code</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">About Me</a>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Visual Card -->
+        <div class="hero-card-wrapper">
+          <div class="interactive-profile-card">
+            <div class="card-glass-header">
+              <div class="avatar-circle">
+                <span class="avatar-letters">AK</span>
+              </div>
+              <div class="avatar-info">
+                <h3>Ashmit Kataria</h3>
+                <p>Newton School of Technology</p>
+              </div>
+              <span class="badge-online">Active</span>
+            </div>
+
+            <!-- Terminal Sneak Peek inside card -->
+            <div class="mini-terminal">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-file">ashmit@nst:~</span>
+              </div>
+              <div class="terminal-body">
+                <p class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></p>
+                <p class="term-output text-cyan">"Ashmit Kataria - Tech Enthusiast"</p>
+                <p class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat origin.txt</span></p>
+                <p class="term-output text-amber">📍 Hisar, Haryana, India</p>
+                <p class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">python3 -c "import skills; skills.list()"</span></p>
+                <p class="term-output text-green">['Python3', 'Bash/Zsh', 'Terminal Tools', 'HTML5', 'CSS3']</p>
+                <p class="term-line"><span class="term-prompt">$</span> <span class="term-cursor"></span></p>
+              </div>
+            </div>
+
+            <div class="card-footer-stats">
+              <div class="stat-box">
+                <span class="stat-number">2601010074</span>
+                <span class="stat-label">Enrollment ID</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">NST</span>
+                <span class="stat-label">Campus</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">2026</span>
+                <span class="stat-label">Batch</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Floating Accent Chips -->
+          <div class="floating-chip chip-1">
+            <span class="chip-emoji">🐍</span>
+            <span>Python Developer</span>
+          </div>
+          <div class="floating-chip chip-2">
+            <span class="chip-emoji">⚡</span>
+            <span>CLI Wizard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Know More</span>
+          <h2 class="section-title">About <span class="gradient-text">Ashmit Kataria</span></h2>
+          <p class="section-desc">Passionate learner on a mission to build solid engineering foundations.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card main-bio">
+            <div class="bio-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bio-icon">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              Hello! I'm <strong>Ashmit Kataria</strong>, born and raised in <strong>Hisar, Haryana</strong>. 
+              I am currently enrolled in the forward-thinking computer science curriculum at 
+              <strong>Newton School of Technology</strong>.
+            </p>
+            <p>
+              My journey into technology is driven by deep curiosity about how computer software operates from 
+              the core terminal prompt to interactive user applications. I spend my time mastering 
+              logic-building in <strong>Python</strong> and understanding systems through 
+              <strong>command-line interfaces (CLI)</strong>.
+            </p>
+            
+            <div class="bio-highlights">
+              <div class="bio-highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Fast learner eager to solve real-world coding problems.</span>
+              </div>
+              <div class="bio-highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Strong foundation in algorithmic logic and scripts.</span>
+              </div>
+              <div class="bio-highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Enthusiastic about clean coding and command line efficiency.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details-column">
+            <div class="info-card glass-card">
+              <div class="info-card-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Institution</h4>
+                <p class="info-val">Newton School of Technology</p>
+                <span class="info-sub">Dedicated to engineering excellence</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-card-icon icon-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                  <line x1="7" y1="8" x2="17" y2="8"></line>
+                  <line x1="7" y1="12" x2="17" y2="12"></line>
+                  <line x1="7" y1="16" x2="13" y2="16"></line>
+                </svg>
+              </div>
+              <div>
+                <h4>Enrollment Number</h4>
+                <p class="info-val font-mono">2601010074</p>
+                <span class="info-sub">Official Student Identification</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-card-icon icon-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Hometown & Origin</h4>
+                <p class="info-val">Hisar, Haryana, India</p>
+                <span class="info-sub">Proud of my roots & culture</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-card-icon icon-amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Current Focus</h4>
+                <p class="info-val">Python & Terminal CLI</p>
+                <span class="info-sub">Automation, scripting & shell power</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">What I'm <span class="gradient-text">Learning & Mastering</span></h2>
+          <p class="section-desc">Building strong computational principles with powerful tools and technologies.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Python -->
+          <div class="skill-card card-python glass-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg class="tech-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.917 0C5.556 0 5.92 2.76 5.92 2.76l.006 2.86h6.082v.868H3.818S0 6.046 0 12.433c0 6.386 3.327 6.17 3.327 6.17h1.986v-2.793s-.107-3.327 3.268-3.327h5.602s3.155.05 3.155-3.052V3.053S17.886 0 11.917 0zM8.59 1.932a1.08 1.08 0 1 1-.002 2.16 1.08 1.08 0 0 1 .002-2.16zM12.083 24c6.36 0 5.996-2.76 5.996-2.76l-.006-2.86H11.99v-.868h8.191s3.818.442 3.818-5.945c0-6.386-3.327-6.17-3.327-6.17h-1.986v2.793s.107 3.327-3.268 3.327H9.816s-3.155-.05-3.155 3.052v6.425s-.548 3.053 5.422 3.053zm3.327-1.932a1.08 1.08 0 1 1 .002-2.16 1.08 1.08 0 0 1-.002 2.16z"/>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Python Programming</h3>
+                <span class="skill-badge badge-orange">Core Language</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Learning core Python syntax, functions, object-oriented concepts, loops, control structures, and writing scripts to automate routine tasks.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Data Types</span>
+              <span class="tag">Control Flow</span>
+              <span class="tag">Functions</span>
+              <span class="tag">OOP Basics</span>
+              <span class="tag">Scripting</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency & Growth</span>
+                <span>Active Learning</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill fill-python"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Terminal CLI -->
+          <div class="skill-card card-terminal glass-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Terminal & CLI</h3>
+                <span class="skill-badge badge-cyan">Workflow & Tools</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Harnessing the speed of command-line power. File system navigation, process management, shell scripting, piping commands, and developer CLI utilities.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Bash & Zsh</span>
+              <span class="tag">File System Ops</span>
+              <span class="tag">Grep & Piping</span>
+              <span class="tag">Git CLI</span>
+              <span class="tag">Permissions</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency & Growth</span>
+                <span>Active Learning</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill fill-cli"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Web Foundations -->
+          <div class="skill-card card-web glass-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>HTML5 & Modern CSS3</h3>
+                <span class="skill-badge badge-magenta">Frontend</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Structuring semantic web pages with accessible HTML5 and crafting responsive, vibrant, modern layouts with CSS Flexbox, Grid, and keyframe animations.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic HTML</span>
+              <span class="tag">CSS Grid & Flexbox</span>
+              <span class="tag">Responsive UI</span>
+              <span class="tag">CSS Variables</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency & Growth</span>
+                <span>Solid Core</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill fill-web"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Problem Solving -->
+          <div class="skill-card card-logic glass-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg class="tech-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Logic & Algorithms</h3>
+                <span class="skill-badge badge-emerald">Foundations</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Cultivating an analytical mindset at Newton School of Technology. Decomposing complex problems into structured step-by-step algorithmic solutions.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Problem Decomposition</span>
+              <span class="tag">Flowcharts</span>
+              <span class="tag">Edge Cases</span>
+              <span class="tag">Debugging</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency & Growth</span>
+                <span>Continuous Practice</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill fill-logic"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal & Code Showcase Section -->
+    <section id="terminal" class="section terminal-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive Preview</span>
+          <h2 class="section-title">The <span class="gradient-text">Command Line & Python</span> Lab</h2>
+          <p class="section-desc">A snapshot of the tools and code patterns Ashmit practices daily.</p>
+        </div>
+
+        <div class="terminal-showcase-container">
+          <!-- Main Terminal Window -->
+          <div class="full-terminal glass-card">
+            <div class="terminal-bar">
+              <div class="terminal-buttons">
+                <span class="t-btn btn-close"></span>
+                <span class="t-btn btn-min"></span>
+                <span class="t-btn btn-max"></span>
+              </div>
+              <div class="terminal-tab active-tab">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>ashmit@nst-lab: ~/portfolio</span>
+              </div>
+              <div class="terminal-actions">zsh (utf-8)</div>
+            </div>
+
+            <div class="terminal-content-area font-mono">
+              <div class="term-block">
+                <span class="term-user">ashmit@newton-tech</span>:<span class="term-path">~</span>$ <span class="term-command">cat student_profile.py</span>
+              </div>
+              
+              <div class="code-editor">
+                <p><span class="c-keyword">class</span> <span class="c-class">StudentDeveloper</span>:</p>
+                <p class="indent-1"><span class="c-keyword">def</span> <span class="c-func">__init__</span>(<span class="c-param">self</span>):</p>
+                <p class="indent-2"><span class="c-param">self</span>.name = <span class="c-string">"Ashmit Kataria"</span></p>
+                <p class="indent-2"><span class="c-param">self</span>.origin = <span class="c-string">"Hisar, Haryana, India"</span></p>
+                <p class="indent-2"><span class="c-param">self</span>.institute = <span class="c-string">"Newton School of Technology"</span></p>
+                <p class="indent-2"><span class="c-param">self</span>.enrollment_id = <span class="c-number">2601010074</span></p>
+                <p class="indent-2"><span class="c-param">self</span>.skills = [<span class="c-string">"Python"</span>, <span class="c-string">"Terminal CLI"</span>, <span class="c-string">"HTML/CSS"</span>]</p>
+                <p class="indent-2"><span class="c-param">self</span>.passion = <span class="c-string">"Solving problems with clean code"</span></p>
+                <br>
+                <p class="indent-1"><span class="c-keyword">def</span> <span class="c-func">greet</span>(<span class="c-param">self</span>):</p>
+                <p class="indent-2"><span class="c-keyword">return</span> <span class="c-string">f"Welcome! Let's build something extraordinary together."</span></p>
+                <br>
+                <p><span class="c-comment"># Instantiate student profile</span></p>
+                <p>ashmit = <span class="c-class">StudentDeveloper</span>()</p>
+                <p><span class="c-func">print</span>(ashmit.<span class="c-func">greet</span>())</p>
+              </div>
+
+              <div class="term-block">
+                <span class="term-user">ashmit@newton-tech</span>:<span class="term-path">~</span>$ <span class="term-command">python3 student_profile.py</span>
+              </div>
+              <div class="term-result text-emerald">
+                🚀 Welcome! Let's build something extraordinary together.
+              </div>
+
+              <div class="term-block">
+                <span class="term-user">ashmit@newton-tech</span>:<span class="term-path">~</span>$ <span class="term-command">history | tail -n 5</span>
+              </div>
+              <div class="term-history">
+                <p>101  mkdir -p ~/projects/python-scripts && cd $_</p>
+                <p>102  python3 -m venv venv && source venv/bin/activate</p>
+                <p>103  curl -s "https://api.github.com/users/ashmit" | grep "login"</p>
+                <p>104  git init && git add . && git commit -m "feat: initial commit"</p>
+                <p>105  chmod +x run_pipeline.sh && ./run_pipeline.sh</p>
+              </div>
+
+              <div class="term-block term-active-prompt">
+                <span class="term-user">ashmit@newton-tech</span>:<span class="term-path">~</span>$ <span class="term-command">echo "Excited to collaborate!"</span><span class="term-cursor"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fast CLI Cheatsheet Column -->
+          <div class="cli-cheatsheet glass-card">
+            <h3 class="cheatsheet-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cs-icon">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              Terminal Commands I Love
+            </h3>
+            <div class="command-list font-mono">
+              <div class="cmd-item">
+                <code class="cmd-code">ls -la</code>
+                <span class="cmd-desc">List all files with details & hidden entries</span>
+              </div>
+              <div class="cmd-item">
+                <code class="cmd-code">mkdir -p</code>
+                <span class="cmd-desc">Create nested directory paths easily</span>
+              </div>
+              <div class="cmd-item">
+                <code class="cmd-code">grep -rnI</code>
+                <span class="cmd-desc">Search recursive text strings in files</span>
+              </div>
+              <div class="cmd-item">
+                <code class="cmd-code">python3 -m</code>
+                <span class="cmd-desc">Execute Python modules directly from CLI</span>
+              </div>
+              <div class="cmd-item">
+                <code class="cmd-code">chmod +x</code>
+                <span class="cmd-desc">Grant executable permissions to scripts</span>
+              </div>
+              <div class="cmd-item">
+                <code class="cmd-code">cat | less</code>
+                <span class="cmd-desc">Stream and inspect file content fluidly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Path</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Institution</span></h2>
+          <p class="section-desc">Nurturing engineering mindset and hands-on technological proficiency.</p>
+        </div>
+
+        <div class="education-card glass-card">
+          <div class="edu-header">
+            <div class="edu-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="edu-icon">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-type">Premier Tech Program</span>
+              <h3 class="edu-institute">Newton School of Technology</h3>
+              <p class="edu-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pin-icon">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                India • Student ID: <strong>2601010074</strong>
+              </p>
+            </div>
+            <div class="edu-status-pill">
+              Currently Enrolled
+            </div>
+          </div>
+
+          <div class="edu-body">
+            <p>
+              At Newton School of Technology, the curriculum prioritizes experiential engineering, modern computer science fundamentals, 
+              industry-relevant tools, and early exposure to practical software development practices.
+            </p>
+            
+            <div class="edu-pillars">
+              <div class="pillar-card">
+                <div class="pillar-num">01</div>
+                <h4>Computer Science Core</h4>
+                <p>Data structures, algorithmic thinking, and programming fundamentals starting with Python.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-num">02</div>
+                <h4>Developer Tooling</h4>
+                <p>Mastering UNIX terminal, command line efficiency, version control, and modern dev setups.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-num">03</div>
+                <h4>Hands-On Projects</h4>
+                <p>Translating theoretical knowledge into interactive software, responsive web pages, and automation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-desc">Have questions, collaboration ideas, or want to say hello? I'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-cards-col">
+            <div class="contact-tile glass-card">
+              <div class="contact-tile-icon icon-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Name</h4>
+                <p class="tile-val">Ashmit Kataria</p>
+                <span class="tile-sub">Student & Aspiring Software Engineer</span>
+              </div>
+            </div>
+
+            <div class="contact-tile glass-card">
+              <div class="contact-tile-icon icon-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p class="tile-val">Hisar, Haryana, India</p>
+                <span class="tile-sub">Open to remote & in-person connections</span>
+              </div>
+            </div>
+
+            <div class="contact-tile glass-card">
+              <div class="contact-tile-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>College</h4>
+                <p class="tile-val">Newton School of Technology</p>
+                <span class="tile-sub">Enrollment: 2601010074</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pure HTML/CSS Interactive Contact Form Mockup -->
+          <div class="contact-form-wrapper glass-card">
+            <h3>Send a Message</h3>
+            <p class="form-desc">Fill out the form below to initiate a conversation with Ashmit.</p>
+            
+            <form class="contact-form" action="#" method="GET" onsubmit="return false;">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" class="form-input" placeholder="e.g. jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-input" placeholder="e.g. Project collaboration / Tech chat" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" rows="4" class="form-input" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="logo">
+          <span class="logo-badge">AK</span>
+          <span class="logo-text">Ashmit Kataria</span>
+        </div>
+        <p class="footer-tagline">
+          Crafted with pure HTML & CSS • Student at Newton School of Technology • From Hisar, Haryana
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#hero">Back to Top ↑</a>
+          <a href="#skills">Skills</a>
+          <a href="#terminal">Terminal</a>
+          <a href="#about">About</a>
+        </div>
+        <p class="copyright">
+          © 2026 Ashmit Kataria. All rights reserved. Enrollment: 2601010074
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
